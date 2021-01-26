@@ -17,6 +17,8 @@
   --light_gray: #b1b1b1;
 
   /* Spacing */
+  --min_margin: 1rem;
+  --min_padding: 1rem;
 }
 
 /* Font Settings */
@@ -40,6 +42,49 @@ h2 {
 p {
   font-style: 1.2rem;
 }
+/* End Font Settings */
+
+/* Objets */
+.container {
+  padding: var(--min_padding);
+  margin-bottom: var(--min_margin);
+}
+.wrapper {
+  margin-top: 0.5rem;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+}
+.card {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 100px;
+  background-color: var(--primary_color);
+  color: var(--bg);
+}
+.card:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.btn {
+  width: auto;
+  padding: calc(var(--min_padding) / 3) calc(var(--min_padding) * 2);
+  text-align: center;
+  outline: none;
+  border: none;
+  color: var(--bg);
+  font-weight: 300;
+}
+.btn-confirm {
+  background-color: var(--secondary_color);
+}
+.btn-cancel {
+  background-color: #646363;
+}
+/* End Objets */
+
+/* End General Settings */
 
 /* Content */
 body {
@@ -49,7 +94,7 @@ body {
 
 /* Header */
 header {
-  padding: 1rem;
+  padding: var(--min_padding);
   height: auto;
 }
 header .logo {
@@ -74,3 +119,19 @@ menu a {
 menu a:not(:last-child) {
   margin-right: 1rem;
 }
+/* End Header */
+
+/* Hero */
+.hero {
+  width: 100%;
+  height: 200px;
+  margin: var(--min_margin) 0;
+  background-color: var(--secondary_color);
+}
+/* End Hero */
+
+/* Footer */
+footer {
+  padding: var(--min_padding);
+}
+/* End Footer */
