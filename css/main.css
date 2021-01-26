@@ -1,0 +1,68 @@
+/* General Settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Fonts */
+  font-size: 67.5%;
+  font-family: "Raleway", sans-serif;
+
+  /* Colors */
+  --bg: #040714;
+  --primary_color: #e9e9e9;
+  --secondary_color: #fdb827;
+  --light_gray: #b1b1b1;
+
+  /* Spacing */
+}
+
+/* Font Settings */
+h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  size: 1.8rem;
+}
+h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  size: 1.4rem;
+}
+.light-font {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  size: 1.2rem;
+  color: var(--light_gray);
+}
+
+p {
+  font-style: 1.2rem;
+}
+
+/* Content */
+body {
+  background-color: var(--bg);
+  color: var(--primary_color);
+}
+
+/* Header */
+header {
+  padding: 1rem;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+menu {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+menu a {
+  text-decoration: none;
+  color: var(--light_gray);
+}
