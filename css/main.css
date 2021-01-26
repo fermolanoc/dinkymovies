@@ -5,9 +5,11 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
 :root {
   /* Fonts */
-  font-size: 67.5%;
   font-family: "Raleway", sans-serif;
 
   /* Colors */
@@ -39,18 +41,15 @@ h2 {
   color: var(--light_gray);
 }
 
-p {
-  font-style: 1.2rem;
-}
 /* End Font Settings */
 
-/* Objets */
+/* Components */
 .container {
   padding: var(--min_padding);
   margin-bottom: var(--min_margin);
 }
 .wrapper {
-  margin-top: 0.5rem;
+  margin: 0.5rem 0 2rem;
   display: flex;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -60,7 +59,7 @@ p {
   flex: 0 0 auto;
   width: 150px;
   height: 100px;
-  background-color: var(--primary_color);
+  background-color: rgba(255, 255, 255, 0.1);
   color: var(--bg);
 }
 .card:not(:last-child) {
@@ -82,14 +81,14 @@ p {
 .btn-cancel {
   background-color: #646363;
 }
-/* End Objets */
-
+/* End Components */
 /* End General Settings */
 
 /* Content */
 body {
   background-color: var(--bg);
   color: var(--primary_color);
+  font-size: 1.2rem;
 }
 
 /* Header */
@@ -133,5 +132,25 @@ menu a:not(:last-child) {
 /* Footer */
 footer {
   padding: var(--min_padding);
+  background-color: white;
+  color: var(--bg);
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer div {
+  margin-bottom: var(--min_margin);
+}
+footer .legal {
+  text-align: center;
+}
+footer .copyright {
+  margin-top: var(--min_margin);
+  font-weight: 700;
+  color: var(--secondary_color);
 }
 /* End Footer */

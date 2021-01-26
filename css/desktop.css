@@ -1,0 +1,41 @@
+.card {
+  flex: 1 0 auto;
+  width: 150px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--bg);
+}
+
+/* Content */
+header {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.container {
+  margin: auto 5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* End Content */
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+footer .legal {
+  order: 1;
+  text-align: left;
+}
+.social_media {
+  order: 3;
+  margin-bottom: none;
+}
+.copyright {
+  order: 2;
+}
+/* End Footer */
