@@ -34,24 +34,24 @@
   <body>
     <!-- Header -->
     <header>
-      <!-- Nav -->
       <nav>
         <div class="logo">
           <h1>Dinky Video</h1>
         </div>
-
         <menu>
           <a href="">New Releases</a>
           <a href="">Categories</a>
           <a href="">FAQ</a>
         </menu>
       </nav>
-      <!-- End Nav -->
     </header>
     <!-- End Header -->
 
     <!-- Hero -->
-    <div class="hero">hero</div>
+    <div class="hero">
+      Enjoy the biggest movie collection <small>By Dinky Studio</small>
+    </div>
+
     <!-- End Hero -->
 
     <!-- Search area -->
@@ -70,39 +70,8 @@
       <!-- End Search area -->
 
       <!-- Categories -->
-      <h2>New Release</h2>
-      <div class="wrapper">
-        <div class="card">
-          <img src="" alt="" id="cover" />
-          <p class="intento"></p>
-        </div>
-        <div class="card">card</div>
-        <div class="card">card</div>
-        <div class="card">card</div>
-        <div class="card">card</div>
-        <div class="card">card</div>
-      </div>
-      <h2>Not on Netflix</h2>
-      <div class="wrapper">
-        <div class="card">card</div>
-        <div class="card">card</div>
-        <div class="card">card</div>
-        <div class="card">card</div>
-        <div class="card">card</div>
-        <div class="card">card</div>
-      </div>
-      <h2>Family Time</h2>
-      <div class="wrapper">
-        <div class="card">card</div>
-        <div class="card">card</div>
-        <div class="card">card</div>
-        <div class="card">card</div>
-        <div class="card">card</div>
-        <div class="card">card</div>
-      </div>
+      <div id="movies-container"></div>
     </div>
-    <!-- End Categories -->
-
     <!-- Footer -->
     <footer>
       <div class="social_media" style="font-size: 1rem; color: #fdb827">
@@ -117,8 +86,8 @@
         <p class="copyright"><b>&copy;DinkyStudio, Minnesota, US</b></p>
       </div>
     </footer>
-    <!-- End Footer -->
 
+    <script src="./assets/js/apiTransaction.js"></script>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>

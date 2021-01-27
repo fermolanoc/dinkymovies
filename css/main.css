@@ -76,6 +76,7 @@ h2 {
   border: none;
   color: var(--bg);
   font-weight: 300;
+  cursor: pointer;
 }
 .btn-confirm {
   background-color: var(--secondary_color);
@@ -126,9 +127,21 @@ menu a:not(:last-child) {
 /* Hero */
 .hero {
   width: 100%;
-  height: 200px;
+  height: auto;
   margin: var(--min_margin) 0;
+  padding: 2rem 5rem;
   background-color: var(--secondary_color);
+  color: var(--bg);
+  font-size: 3.4rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero small {
+  color: white;
+  font-size: 1.2rem;
 }
 /* End Hero */
 
@@ -136,7 +149,6 @@ menu a:not(:last-child) {
 form {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
@@ -150,11 +162,65 @@ form {
   padding: calc(var(--min_padding) / 2) calc(var(--min_padding) * 2);
   font-size: 1rem;
   font-weight: 400;
-  color: #495057;
+  color: var(var(--light_gray));
   outline: none;
   caret-color: var(--secondary_color);
 }
 /* End Form Group */
+
+/* Searchable Results */
+#movies-searchable {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.movie {
+  margin-bottom: 5rem;
+}
+.section {
+  display: flex;
+  width: 100%;
+  overflow: auto;
+  margin-bottom: calc(var(--min_margin) * 2);
+}
+.section img {
+  width: 150px;
+  height: 100px;
+}
+.section img:not(:last-child) {
+  margin-right: calc(var(--min_margin) * 2);
+}
+img {
+  transition: 400ms;
+}
+img:hover {
+  margin-left: 0 40px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.content {
+  /* border: 0.1px solid var(--light_gray); */
+  /* opacity: 0.2; */
+  display: none;
+  margin-bottom: 2rem;
+}
+.content-display {
+  display: block;
+}
+.content div {
+  display: flex;
+  width: 100%;
+  overflow: auto;
+}
+#content-close {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--secondary_color);
+  cursor: pointer;
+}
+iframe:not(:last-child) {
+  margin-right: var(--min_margin);
+}
+/* End Searchable Results */
 
 /* Footer */
 footer {
@@ -179,5 +245,8 @@ footer .copyright {
   margin-top: var(--min_margin);
   font-weight: 700;
   color: var(--secondary_color);
+}
+.fab {
+  cursor: pointer;
 }
 /* End Footer */
