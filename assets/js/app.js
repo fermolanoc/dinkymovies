@@ -120,7 +120,7 @@ document.onclick = function (event) {
     }
 }
 
-
+getNowPlaying();
 getUpcomingMovies();
 getTopRatedMovies();
 getPopularMovies();

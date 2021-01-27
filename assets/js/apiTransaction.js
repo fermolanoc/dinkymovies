@@ -24,6 +24,14 @@ function searchMovie(value) {
 
     requestMovies(url, renderSearchMovies, handleError)
 }
+
+function getNowPlaying() {
+    const path = '/movie/now_playing';
+    const url = generateUrl(path);
+
+    const render = renderMovies.bind({ title: 'Now Playing' })
+    requestMovies(url, render, handleError)
+}
 function getUpcomingMovies() {
     const path = '/movie/upcoming';
     const url = generateUrl(path);
