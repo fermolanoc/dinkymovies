@@ -183,8 +183,8 @@ form {
   margin-bottom: calc(var(--min_margin) * 2);
 }
 .section img {
-  width: 150px;
-  height: 100px;
+  width: 100px;
+  height: 150px;
 }
 .section img:not(:last-child) {
   margin-right: calc(var(--min_margin) * 2);
