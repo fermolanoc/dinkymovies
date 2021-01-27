@@ -28,6 +28,8 @@
       src="https://kit.fontawesome.com/5a24bfd130.js"
       crossorigin="anonymous"
     ></script>
+    <!-- INCLUDING JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -37,13 +39,12 @@
         <div class="logo">
           <h1>Dinky Video</h1>
         </div>
-        <!-- Menu -->
+
         <menu>
           <a href="">New Releases</a>
           <a href="">Categories</a>
           <a href="">FAQ</a>
         </menu>
-        <!-- End Menu -->
       </nav>
       <!-- End Nav -->
     </header>
@@ -53,11 +54,28 @@
     <div class="hero">hero</div>
     <!-- End Hero -->
 
-    <!-- Categories -->
+    <!-- Search area -->
     <div class="container">
+      <p>Looking for something specific?</p>
+      <form action="">
+        <div class="form-group">
+          <input type="text" id="inputValue" />
+        </div>
+        <button type="submit" id="search" class="btn btn-confirm">
+          Search
+        </button>
+      </form>
+
+      <div id="movies-searchable"></div>
+      <!-- End Search area -->
+
+      <!-- Categories -->
       <h2>New Release</h2>
       <div class="wrapper">
-        <div class="card">card</div>
+        <div class="card">
+          <img src="" alt="" id="cover" />
+          <p class="intento"></p>
+        </div>
         <div class="card">card</div>
         <div class="card">card</div>
         <div class="card">card</div>
@@ -100,5 +118,7 @@
       </div>
     </footer>
     <!-- End Footer -->
+
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>

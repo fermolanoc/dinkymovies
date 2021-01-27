@@ -60,15 +60,17 @@ h2 {
   width: 150px;
   height: 100px;
   background-color: rgba(255, 255, 255, 0.1);
-  color: var(--bg);
+  /* color: var(--bg); */
+  color: var(--primary_color);
 }
 .card:not(:last-child) {
   margin-right: 1rem;
 }
 
+/* Buttons */
 .btn {
   width: auto;
-  padding: calc(var(--min_padding) / 3) calc(var(--min_padding) * 2);
+  padding: calc(var(--min_padding) / 2) calc(var(--min_padding) * 2);
   text-align: center;
   outline: none;
   border: none;
@@ -81,6 +83,7 @@ h2 {
 .btn-cancel {
   background-color: #646363;
 }
+
 /* End Components */
 /* End General Settings */
 
@@ -128,6 +131,30 @@ menu a:not(:last-child) {
   background-color: var(--secondary_color);
 }
 /* End Hero */
+
+/* Form Group*/
+form {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.form-group {
+  width: 70%;
+}
+#inputValue {
+  width: 100%;
+  height: auto;
+  padding: calc(var(--min_padding) / 2) calc(var(--min_padding) * 2);
+  font-size: 1rem;
+  font-weight: 400;
+  color: #495057;
+  outline: none;
+  caret-color: var(--secondary_color);
+}
+/* End Form Group */
 
 /* Footer */
 footer {
